@@ -6,8 +6,6 @@ export default function home() {
     homeContainer.id = "home-container";
     document.getElementById("content").appendChild(homeContainer);
 
-
-
     const callingcard = document.createElement("div");
     callingcard.classList.add("calling-card");
 
@@ -21,9 +19,5 @@ export default function home() {
     const description = document.createElement("h3");
     description.textContent = "Experience the the cafe where all miracles begins.";
     document.getElementsByClassName("calling-card")[0].appendChild(description);
-
-
-
-
 
 }
