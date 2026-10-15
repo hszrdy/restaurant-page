@@ -1,4 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family: "GlowSansJ-Normal-Regular";
+    src: url("./fonts/GlowSansJ-Normal-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "GlowSansJ-Normal-Bold";
+    src: url("./fonts/GlowSansJ-Normal-Bold.otf") format("opentype");
+}
+
 
 body {
     display: flex;
@@ -7,7 +16,7 @@ body {
     height: 100%;
     margin: 0;
     background-color: #FFFFFF;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: "GlowSansJ-Normal-Regular", sans-serif;
 }
 
 header {
@@ -15,7 +24,7 @@ header {
     flex-direction:column;
     align-items: center;
     justify-content: center;
-    background-color: #EAF4FF;
+    background-color: #b6d9ff;
     margin: 0;
     padding-bottom: 2rem;
 }
@@ -35,14 +44,29 @@ nav {
     cursor: pointer;
 }
 
-.contentContainer {
+.calling-card {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #F3F4F6;
+    background-color: #b6d9ffdc;
+    border-radius: 10px;
     width: 50vw;
-    height: 50vh;    
+    height: auto;
+    padding: 1rem;
+    margin-bottom: 30%;
+}
+
+.calling-card h1 {
+    font-family: "GlowSansJ-Normal-Bold", sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.calling-card h3 {
+    font-family: "GlowSansJ-Normal-Regular", sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 #logo {
@@ -55,12 +79,17 @@ nav {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    background-image: url('./images/bg-ran9u.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 #site-bg {
     width: 100%;
     height: auto;
+    z-index: -1;
+    display:block
 }
 
 #content {
@@ -68,4 +97,38 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    width: 80%;
+    margin-top: 2rem;
+}
+
+.item-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.card-text {
+    word-wrap: break-word;
+}
+
+.text-container {
+    padding: 1rem;
 }
