@@ -1,5 +1,13 @@
 # restaurant-page
 
+A mock-up restaurant page that is inspired by Cafe Memorial and Blue Archive!
+
+## Installation
+
+1. Install Node.js
+2. Clone this project from this repository
+3. Run npm install to install all dependencies
+4. Run npx webpack serve to run locally
 
 
 ## Credits
